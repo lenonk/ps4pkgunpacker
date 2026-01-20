@@ -10,3 +10,7 @@ cmake ..  -DCMAKE_BUILD_TYPE=Release && make</br>
 RUN
 ------
 ./ps4pkgunpacker</br>
+
+CREDITS
+------
+Some code taken from Shadps4 v0.7.0</br>
