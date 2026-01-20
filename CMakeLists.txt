@@ -103,7 +103,7 @@ set(SOURCES
 
 qt_add_executable(ps4pkgunpacker_bin ${SOURCES})
 
-set_target_properties(ps4pkgunpacker_bin PROPERTIES OUTPUT_NAME "ps4pkgunpacker-tool")
+set_target_properties(ps4pkgunpacker_bin PROPERTIES OUTPUT_NAME "ps4pkgunpacker")
 
 qt_add_qml_module(ps4pkgunpacker_bin
     URI ps4pkgunpacker
@@ -111,7 +111,7 @@ qt_add_qml_module(ps4pkgunpacker_bin
     QML_FILES src/ui/Main.qml
     NO_PLUGIN
     NO_GENERATE_PLUGIN_SOURCE
-    OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/ps4pkgunpacker"
+    OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/ps4pkgunpackerUI"
 )
 
 target_include_directories(ps4pkgunpacker_bin PRIVATE 
